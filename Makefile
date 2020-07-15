@@ -8,8 +8,8 @@ http_request:
 	$(CC) -c $(HTTP_PATH)/*.c 
 
 exe_file:
-	$(CC) socket_api.c -o $(OUTPUT) *.o -I$(HTTP_PATH)
+	$(CC) socket_api.c -o run *.o -I$(HTTP_PATH)
 
 clean:
 	rm *.o 
-	rm $(OUTPUT)
+	rm run
